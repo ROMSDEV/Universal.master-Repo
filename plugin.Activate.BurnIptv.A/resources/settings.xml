@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Activate BurnIptv">
+	    <setting label="Introduzca usuario y contraseña de BurnIptv  Activador y vuelva a Activar" type="lsep" visible="true" />
+	    <setting id="use-account" type="bool" label="Usar Codigo de BurnIptv  Activador?" default="true" visible="false" />
+		<setting id="username" type="text" label="Username" default="user1" />
+		<setting id="password" type="text" label="Password" option="hidden" default="kodiline007" />
+		<setting id="hide-successful-login-messages" type="bool" label="Desactivar Notificaciones?" default="false" enable="true"/>
+	</category>
+</settings>

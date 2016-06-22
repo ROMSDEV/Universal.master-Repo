@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.burn-iptv" name="RepositoryKodiline007" version="1.0.0" provider-name="XKMC">
+	<extension point="xbmc.addon.repository" name="RepositoryKodiline007">
+            <info compressed="false">https://raw.githubusercontent.com/doctoriptv/RepositoryKodiline007/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/doctoriptv/RepositoryKodiline007/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/doctoriptv/RepositoryKodiline007/master/zips</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC/KODI </summary>
+		<description>RepositoryKodiline007</description>
+		<platform>all</platform>
+	</extension>
+</addon>

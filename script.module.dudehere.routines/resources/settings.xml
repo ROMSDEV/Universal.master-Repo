@@ -1,0 +1,20 @@
+<settings>
+	<category label="General">
+	<setting id="enable_playback_service" type="bool" label="Enable Playback Service" default="true"/>
+	</category>
+	<category label="Database">
+		<setting id="database_type" type="enum" label="Database Type" values="SQLite|MySQL" default="0"/>
+		<setting type="lsep" label="SQLite"/>
+		<setting id="database_sqlite_file" type="file" label="SQLite File" default="special://userdata/addon_data/script.module.dudehere.routines/trakt.db" enable="eq(-2,0) + !eq(-3,false)" subsetting="true"/>	
+		<setting type="lsep" label="MySQL"/>
+		<setting id="database_mysql_host" type="text" label="Host" default="" enable="eq(-4,1)" subsetting="true" />
+		<setting id="database_mysql_name" type="text" label="MySQL Schema Name" default="trakt" enable="eq(-5,1)" subsetting="true" />
+		<setting id="database_mysql_user" type="text" label="MySQL Username" default="" enable="eq(-6,1)" subsetting="true" />
+		<setting id="database_mysql_pass" type="text" label="MySQL Password" option="hidden" default="" enable="eq(-7,1)" subsetting="true" />
+		<setting id="database_mysql_port" type="number" label="MySQL Port" default="3306" enable="eq(-8,1)" subsetting="true" />
+		<setting id="database_sqlite_init" type="text" default="false" visible="false" />
+		<setting id="database_mysql_init" type="text" default="false" visible="false" />
+		<setting id="database_sqlite_version" type="number" default="1" visible="false" />
+		<setting id="database_mysql_version" type="number" default="1" visible="false" />
+	</category>
+</settings>

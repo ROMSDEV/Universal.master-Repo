@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.Activate BurnIptv " name="[COLOR gold]Activate BurnIptv[/COLOR]" version="1.0.1" provider-name="[COLOR red]KODILINE007[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.1"/>
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+  <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Activador para BurnIptv[COLOR gold]Activate BurnIptv[/COLOR]</summary>
+    <description>Activador para BurnIptv: foro.http://playweb.x10.mx/- Creado por [COLOR red]KODILINE007[/COLOR]  </description>
+    <platform>all</platform>
+  </extension>
+</addon>
