@@ -2541,4 +2541,17 @@
                 <website>https://superrepo.org/</website>
                 </extension>
                 </addon>
+
+<addon id="Universal.master.Repo" name="Universal.master.Repo" version="1.0.0" provider-name="XKMC">
+	<extension point="xbmc.addon.repository" name="Universal.Master">
+            <info compressed="false">https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/zips</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC/KODI </summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 </addons>
