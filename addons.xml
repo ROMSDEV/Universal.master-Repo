@@ -921,32 +921,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.advancedsettings"
-       name="Easy Advanced Settings"
-       version="0.8.8"
-       provider-name="kinkin">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               	library="default.py">
-        <provides>video executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Create, view, edit and delete your advancedsettings.xml file in a user-friendly gui</summary>
-        <description>All settings follow the xbmc.org wiki[CR][CR]With this tool you can create your advanced settings directly from XBMC[CR][CR]If you don't know what a setting does, don't enable it!</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GNU GENERAL PUBLIC LICENSE</license>
-        <forum></forum>
-        <website></website>
-        <source></source>
-        <email></email>
-    </extension>
-
-</addon>
-
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.43" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1000,34 +974,6 @@
   	<website>http://www.tvaddons.ag/</website>
   	<source></source>
   	<email></email>
-  </extension>
-</addon>
-
-<addon id="plugin.video.BurnIptv"
-       name="[COLOR red]BurnIptv[/COLOR]"
-       version="1.0.0"
-       provider-name="KODILINE007">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>BurnIptv- shamelessly forked from livestreams but added many thinks</summary>
-    <description>[COLOR gold]Burn[COLOR silver]Iptv[COLOR gold](DISEÑADO,,ORGANIZADO,REVISADO,)
-                 [/COLOR]KODILINE007</description>
-    <platform>all</platform>
   </extension>
 </addon>
 
@@ -1086,24 +1032,6 @@
         <description></description>
         <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="plugin.video.filmontv" name="FilmOn" version="1.4" provider-name="FilmOn.TV Networks Inc">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common" version="1.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">FilmOn</summary>
-    <language>en de fr es it ru</language>
-    <description lang="en">FilmOn.com is an internet based television provider owned by FilmOn.TV Networks Inc. FilmOn.TV Networks was founded by Alki David in 2006.FilmOn.com subscription packages include access to over 120 streaming TV channels (mostly in English language) in addition to premium FilmOn.com Movie channels and pay-per-view channels. Please visit www.xbmchub.com for assistance with this add-on.</description>
-    <platform>all</platform>
-    <forum>http://www.xbmchub.com/forums/eleazars-xbmc-add-repository/</forum>
-    <website>http://www.xbmchub.com/</website>
-  </extension>
 </addon>
 
 <addon id="plugin.video.genesis" name="Genesis" version="5.1.4" provider-name="lambda">
@@ -1994,25 +1922,6 @@
     </extension>
 </addon>
 
-<addon id="script.module.futures"
-       name="futures"
-       version="2.2.0"
-       provider-name="Brian Quinlan">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>A futures implementation for Python</summary>
-    <description>Backport of the concurrent.futures package from Python 3.2</description>
-    <platform>all</platform>
-    <license>BSD</license>
-    <source>https://code.google.com/p/pythonfutures/source/browse</source>
-    <website>https://code.google.com/p/pythonfutures</website>
-  </extension>
-</addon>
-
 <addon id="script.module.html5lib"
        name="html5lib-python"
        version="0.999.0"
@@ -2109,34 +2018,6 @@
   </extension>
 </addon>
 
-<addon id="script.module.livestreamer"
-       name="livestreamer"
-       version="1.12.0"
-       provider-name="Christopher Rosell">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests"
-                      version="1.1.0"
-                     optional="false"/>
-    <import addon="script.module.singledispatch"
-                      version="3.4.0.3"
-                     optional="false"/>
-    <import addon="script.module.futures"
-                      version="2.2.0"
-                     optional="false"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>Livestreamer extracts streams from various services</summary>
-    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
-    <platform>all</platform>
-    <license>Simplified BSD</license>
-    <source>https://github.com/chrippa/livestreamer.git</source>
-    <website>http://livestreamer.io</website>
-  </extension>
-</addon>
-
 <addon id="script.module.m3u8" name="m3u8" version="0.2.2" provider-name="globocom, Timewasted">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -2181,28 +2062,6 @@
     <email></email>
     <source></source>
   </extension>
-</addon>
-
-<addon id="script.module.mechanize"
-	name="Mechanize"
-	version="0.2.6"
-	provider-name="Tristan Fischer (sphere)">
-	<requires>
-	<import addon="xbmc.python"
-			version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.module"
-			 library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Stateful programmatic web browsing in Python, after Andy Lester’s Perl module WWW::Mechanize.</summary>
-		<description lang="en">packed for xbmc from https://github.com/jjlee/mechanize</description>
-		<disclaimer lang="en">packed for xbmc from https://github.com/jjlee/mechanize</disclaimer>
-		<forum></forum>
-		<website>http://wwwsearch.sourceforge.net/mechanize/</website>
-		<license>BSD</license>
-		<platform>all</platform>
-		<source>https://github.com/jjlee/mechanize</source>
-	</extension>
 </addon>
 
 <addon id="script.module.metahandler"
@@ -2384,45 +2243,6 @@
     <license>MIT License, Academic Free License v. 2.1</license>
     <website>https://pypi.python.org/pypi/simplejson/</website>
     <source>https://pypi.python.org/pypi/simplejson/</source>
-  </extension>
-</addon>
-
-<addon id="script.module.singledispatch"
-       name="singledispatch"
-       version="3.4.0.3"
-       provider-name="Łukasz Langa">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>Single-dispatch generic functions</summary>
-    <description>This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3.</description>
-    <platform>all</platform>
-    <license>MIT</license>
-    <source>https://pypi.python.org/pypi/singledispatch#downloads</source>
-    <website>http://docs.python.org/3/library/functools.html#functools.singledispatch</website>
-  </extension>
-</addon>
-
-<addon id="script.module.six"
-       name="six"
-       version="1.9.0"
-       provider-name="gutworth">
-  <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Python 2 and 3 compatibility utilities.</summary>
-    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
-    <platform>all</platform>
-    <license>MIT</license>
-    <source>https://pypi.python.org/pypi/six</source>
-    <website>https://pypi.python.org/pypi/six</website>
   </extension>
 </addon>
 
@@ -2722,11 +2542,11 @@
                 </extension>
                 </addon>
 
-<addon id="Universal.master-Repo" name="Universal.master-Repo" version="1.0.0" provider-name="Universal.Master">
+<addon id="Universal.master.Repo" name="Universal.master.Repo" version="1.0.0" provider-name="XKMC">
 	<extension point="xbmc.addon.repository" name="Universal.Master">
-            <info compressed="false">https://raw.githubusercontent.com/doctoriptv/Universal.master-Repo/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/doctoriptv/Universal.master-Repo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/doctoriptv/Universal.master-Repo/master/Universal.master.Repo.zip</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/doctoriptv/Universal.master.Repo/master/zips</datadir>
 	</extension>
     <extension point="xbmc.addon.metadata">
 		<summary>Addons related to XBMC/KODI </summary>
